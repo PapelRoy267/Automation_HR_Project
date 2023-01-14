@@ -18,7 +18,7 @@ public  void coverpage (){
 
 
     List<WebElement> txtLabel= driver.findElements(By.tagName("img"));
-    String welcomeMessage_Actual= txtLabel.get(1).getText();
+    String welcomeMessage_Actual= txtLabel.get(0).getText();
     String welcomeMessage_Expected="toolsqa";
    // Assert.assertEquals(welcomeMessage_Actual,welcomeMessage_Expected)
 
