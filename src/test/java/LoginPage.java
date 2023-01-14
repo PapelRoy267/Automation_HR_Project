@@ -8,12 +8,11 @@ import java.util.List;
 public class LoginPage {
 
 
-
-    //@FindBy(className = "login_input__2-vJx")
+    @FindBy(className = "oxd-input oxd-input--active")
     List<WebElement> txtCreds;
 
-    @FindBy(css = "[type=submit")
-   WebElement btnsubmit;
+    @FindBy(css = "type=\"submit")
+    WebElement btnsubmit;
 
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -21,12 +20,14 @@ public class LoginPage {
 
     }
 
-    //public void dologin(String username, String password) {
+    public void dologin(String username, String password) {
 
-        //txtCreds.get(0).sendKeys(username);
-        //txtCreds.get(1).sendKeys(password);
-        //btnsubmit.click();
-    }//*
+        txtCreds.get(0).sendKeys(username);
+        txtCreds.get(1).sendKeys(password);
+        btnsubmit.click();
+    }
+}
+
 
 
 
