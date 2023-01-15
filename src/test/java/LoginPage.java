@@ -8,41 +8,23 @@ import java.util.List;
 public class LoginPage {
 
 
-    @FindBy(className = "oxd-input oxd-input--active")
-    List<WebElement> txtCreds;
+    @FindBy(className = "oxd-input ")
+    List<WebElement> txtcreads;
 
-    @FindBy(css = "type=\"submit")
-    WebElement btnsubmit;
+    @FindBy(css = "[type=submit]")
+    WebElement btnSubmit;
 
     public LoginPage(WebDriver driver) {
+
         PageFactory.initElements(driver, this);
-
-
     }
 
-    public void dologin(String username, String password) {
+    public void doLogin(String Username, String Password) {
 
-        txtCreds.get(0).sendKeys(username);
-        txtCreds.get(1).sendKeys(password);
-        btnsubmit.click();
+        txtcreads.get(0).sendKeys(Username);
+        txtcreads.get(1).sendKeys(Password);
+        btnSubmit.click();
+
+
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

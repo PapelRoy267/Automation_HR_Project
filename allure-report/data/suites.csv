@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Jan 15 17:55:53 BDT 2023","Sun Jan 15 17:55:59 BDT 2023","6594","Default Suite","ExamAutomation","RunAutomation","RunAutomation","PIM","PIM",""
+"passed","Sun Jan 15 17:55:24 BDT 2023","Sun Jan 15 17:55:52 BDT 2023","28842","Default Suite","ExamAutomation","RunAutomation","RunAutomation","doLogin","doLogin",""
+"passed","Sun Jan 15 17:56:18 BDT 2023","Sun Jan 15 17:56:20 BDT 2023","2067","Default Suite","ExamAutomation","RunAutomation","RunAutomation","Assert","Assert",""
+"passed","Sun Jan 15 17:56:10 BDT 2023","Sun Jan 15 17:56:18 BDT 2023","7579","Default Suite","ExamAutomation","RunAutomation","RunAutomation","SearchButton","SearchButton",""
+"passed","Sun Jan 15 17:55:59 BDT 2023","Sun Jan 15 17:56:10 BDT 2023","10764","Default Suite","ExamAutomation","RunAutomation","RunAutomation","EmployeeName","EmployeeName",""
