@@ -51,13 +51,13 @@ public class RunAutomation extends Setup {
         Save.get(1).click();
 
 
-        //List<WebElement> leveltxt = driver.findElements(By.className("oxd-text"));
-        // String UserName_Actual = leveltxt.get(12).getText();
-        // String UserName_Expected = "papel Chandra Roy";
-        //Assert.assertEquals(UserName_Actual, UserName_Expected);
-        //String UserInfo_Actual = leveltxt.get(13).getText();
-        // String UserInfo_Expected = "Personal Details";
-        //Assert.assertEquals(UserInfo_Actual, UserInfo_Expected);
+        List<WebElement> leveltxt = driver.findElements(By.className("oxd-text"));
+        String UserName_Actual = leveltxt.get(12).getText();
+        String UserName_Expected = "papel Chandra Roy";
+        Assert.assertEquals(UserName_Actual, UserName_Expected);
+        String UserInfo_Actual = leveltxt.get(13).getText();
+        String UserInfo_Expected = "Personal Details";
+        Assert.assertEquals(UserInfo_Actual, UserInfo_Expected);
 
         List<WebElement> txt = driver.findElements(By.className("oxd-main-menu-item-wrapper"));
         txt.get(1).click();
