@@ -58,6 +58,7 @@ public class RunAutomation extends Setup {
         String UserInfo_Actual = leveltxt.get(13).getText();
         String UserInfo_Expected = "Personal Details";
         Assert.assertEquals(UserInfo_Actual, UserInfo_Expected);
+        Thread.sleep(2000);
 
         List<WebElement> txt = driver.findElements(By.className("oxd-main-menu-item-wrapper"));
         txt.get(1).click();
